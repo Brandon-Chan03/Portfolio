@@ -1,3 +1,5 @@
+import pdf from '../../../resume.pdf'
+
 export function Summary() {
     return (
         <div className="summary-introduction">
@@ -17,7 +19,7 @@ export function Summary() {
                 </div>
             </section>
             <section className="resume-section">
-                <button className="resume">Resume</button>
+                <button className="resume"><a href={pdf} target='_blank' rel='noreferrer' className='resume-link'>Resume</a></button>
             </section>
         </div>
     )

@@ -127,13 +127,15 @@ hr {
 }
 
 .resume-link {
-    text-decoration: none;
     font-size: 1rem;
     color: rgb(195, 135, 255);
+    text-decoration: none;
 }
 
 .resume-link:visited {
     color: rgb(195, 135, 255);
+    text-decoration: none;
+
 }
 
 .about-me-heading {
