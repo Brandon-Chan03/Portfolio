@@ -1,38 +1,254 @@
-.App {
-  text-align: center;
+/* ports the fonts Red Hat Mono and Oxygen */
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+    background-color: rgb(5, 25, 47);
+    margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo {
+    color: seashell    ;
+    padding-left: 1rem;
+    font-weight: 700;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(10, 25, 47, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
 
-.App-link {
-  color: #61dafb;
+.main-links li {
+    padding: 0px 1rem;
+    font-size: 1rem;
+    display: inline;
+    color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* this is temporary */
+.main-links li:hover {
+    color:rgb(204, 214, 246);
+    cursor: pointer;
 }
+
+/* .main-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.main-links a:hover {
+    color:rgb(204, 214, 246);
+} */
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20rem;
+}
+
+.heading-color {
+    color:rgb(204, 214, 246);
+}
+
+.font-oxygen {
+    font-family: "Oxygen";
+}
+
+.font-redhat {
+    font-family: "Red Hat Mono"
+}
+
+.p-color {
+    color: rgb(136, 146, 176);
+}
+
+.weight-600 {
+    font-weight: 600;
+}
+
+hr {
+    border-color: rgba(255, 255, 255, .1);
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.greeting {
+    color: rgb(195, 135, 255);
+    font-size: 1rem;
+    margin: 0 0 0 .3rem;
+    font-weight: 300;
+}
+
+.introduction-name {
+    color: rgb(204, 214, 246);
+    font-size: 5rem;
+    margin: 0 0;
+    font-weight: 700;
+}
+
+.introduction-title {
+    color: rgb(136, 146, 176);
+    font-size: 5rem;
+    margin: 0 0;
+    font-weight: 400;
+}
+
+.quick-summary {
+    font-size: 1.25rem;    
+    margin: 0 0 0 .3rem;
+    line-height: 25px;
+    font-weight: 300;
+}
+
+.resume {
+    margin: 1rem 0 0 .3rem;
+    width: 15rem;
+    height: 3.5rem;
+    border-color: rgb(195, 135, 255);
+    background-color: transparent;
+    color: rgb(195, 135, 255);
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border-style: solid;
+}
+
+.resume:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+}
+
+.resume-link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: rgb(195, 135, 255);
+}
+
+.resume-link:visited {
+    color: rgb(195, 135, 255);
+}
+
+.about-me-heading {
+    color: rgb(195, 135, 255);
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.about-me-section {
+    margin-top: 30rem;
+    display: flex;
+}
+
+.about-me {
+    width: 30rem;
+}
+
+.info-about-me,
+.info-continued,
+.info-continued-2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.info-continued {
+    margin-top: 0;
+}
+
+.info-continued-2 {
+    margin-top: 0;
+}
+
+.about-me-info span {
+    color:rgb(195, 135, 255)
+}
+
+.brandon-chan {
+    height: 314px;
+    width: 210px;
+    float: right;
+    margin: 5rem 6rem 1rem 3rem;
+    border-radius: 0.5rem;
+    padding: 5px;
+    border: 1px solid rgb(195, 135, 255);
+}
+
+.technologies {
+    margin-top: 28rem;
+    margin-left: 0.5rem;
+}
+
+.skills-list {
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(2, 1fr);
+}
+
+.skills-list li {
+    list-style-type: none;
+    color: rgb(136, 146, 176);
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+}
+
+.skills-list li::before,
+.work li::before {
+    content: "►";
+    margin-right: 0.5rem;
+    color: rgb(195, 135, 255)
+}
+
+.experience {
+    margin-top: 25rem;
+    display: grid;
+    grid-template: 1fr, 1fr;
+}
+
+.company-heading h1 {
+    font-size: 1.5rem;
+}
+
+.company-heading h2 {
+    font-size: 1.3rem;
+}
+
+.company-heading h1,
+.company-heading h2 {
+    margin-left: 2.5rem;
+}
+
+.company-heading hr {
+    width: 20rem;
+    margin-left: 2.5rem;
+}
+
+.littleboe, 
+.neclf {
+    width: 31rem;
+}
+
+.work li {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    list-style: none;
+}
+
+footer {
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    display: flex;
+    justify-content: center; 
+    margin-top: 20rem;
+}
+
+footer h1 {
+    color: seashell;
+}
+
+
+
