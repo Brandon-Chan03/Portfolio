@@ -1,13 +1,13 @@
 export function Header() {
     return (
         <header>
-            <h1 className="logo font-oxygen">B.C.</h1>
-            <nav className="main-links">
-                <ul className="test">
-                    <button className='header-button'>About</button>
-                    <button className='header-button'>Experience</button>
-                    <button className='header-button'>Projects</button>
-                    <button className='header-button'>Contact Me</button>
+            <h1 class="logo font-oxygen">B.C.</h1>
+            <nav class="main-links font-redhat">
+                <ul>
+                    <li><a href='#about-me'>About</a></li>
+                    <li><a href='#experience'>Experience</a></li>
+                    <li>Projects</li>
+                    <li>Contact Me</li>
                 </ul>
             </nav>
         </header>

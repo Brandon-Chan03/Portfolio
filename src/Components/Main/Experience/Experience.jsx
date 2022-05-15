@@ -1,6 +1,6 @@
 export function Experience() {
     return (
-        <div className="experience">
+        <div className="experience" id='experience'>
             <section class="littleboe">
                 <div class="company-heading font-redhat heading-color weight-600">
                     <h1>LittleBOE LLC</h1>

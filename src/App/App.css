@@ -5,6 +5,7 @@
 html {
     font-size: 16px;
     scroll-behavior: smooth;
+    height: 100vh;
 }
 
 body {
@@ -27,27 +28,19 @@ header {
     border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
 
-.main-links button {
+.main-links li {
     padding: 0px 1rem;
     font-size: 1rem;
     display: inline;
+}
+
+.main-links a {
+    text-decoration: none;
     color: white;
-    background-color: transparent;
-    border: transparent
 }
 
-.header-button {
-    font-family: 'Red Hat Mono';
-}
-
-.test .header-button:not(:last-child) {
-    padding-right: 1.6rem;
-}
-
-/* this is temporary */
-.main-links button:hover {
+.main-links a:hover {
     color:rgb(204, 214, 246);
-    cursor: pointer;
 }
 
 main {

@@ -2,8 +2,8 @@ import selfImage from '../../../images/headshot.jpg'
 
 export function AboutMe() {
     return (
-        <div className="about-me-section">
-            <section className="about-me">
+        <div className="about-me-section ">
+            <section className="about-me" id="about-me">
                 <div className="about-me-title">
                     <h2 className="about-me-heading font-redhat weight-600">About Me</h2>
                     <hr />
